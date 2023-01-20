@@ -88,13 +88,17 @@ h2 {
   height: 70px;
   width: 70px;
   border-radius: 50%;
-  background-color: var(--c-light);
   flex-shrink: 0;
+  overflow: hidden;
 }
 
 .avatar-small {
   width: 45px;
   height: 45px;
+}
+.avatar img {
+  height: 100%;
+  object-fit: cover;
 }
 
 .round-button {
@@ -170,8 +174,18 @@ h2 {
   gap: 1rem;
 }
 
+.searchbar {
+  display: flex;
+  align-items: center;
+}
+
+.searchbar i {
+  font-size: 1.3rem;
+  margin-right: 20px;
+}
+
 .searchbar input {
-  width: 100%;
+  flex: 1;
   max-width: 700px;
   padding: 5px 15px;
   border: none;
@@ -321,7 +335,7 @@ h2 {
 
 @media (width >= 48em) {
   .header {
-    padding: 1.5rem 3rem;
+    padding: 1.1rem 3rem;
     grid-template-columns: 2fr 1fr;
   }
 
@@ -360,11 +374,11 @@ h2 {
 
 @media (width >= 75em) {
   .container {
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 280px 1fr;
   }
   .sidebar {
     display: flex;
     flex-direction: column;
-    padding: 1.5rem 2rem;
+    padding: 1.1rem;
   }
 }
