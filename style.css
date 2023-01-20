@@ -7,6 +7,8 @@
   --c-accent: #4984ae;
   --c-accent-dark: #655675;
   --c-muted: #60626e;
+  --shadow: 0 2px 5px rgb(0 0 0 / 10%);
+  --shadow-lg: 0 4px 5px rgba(0, 0, 0, 0.2);
 }
 
 /*
@@ -169,6 +171,7 @@ h2 {
 
 .header {
   background: white;
+  box-shadow: var(--shadow-lg);
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
@@ -255,7 +258,7 @@ h2 {
   border-radius: 10px;
   background: white;
   color: black;
-  box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+  box-shadow: var(--shadow);
   overflow: hidden;
 }
 
@@ -282,7 +285,7 @@ h2 {
 .projects .card:hover {
   top: -2px;
   text-decoration: none;
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-lg);
 }
 
 .card-actions {
