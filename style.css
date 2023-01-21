@@ -180,11 +180,13 @@ h2 {
 .searchbar {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 
 .searchbar i {
   font-size: 1.3rem;
-  margin-right: 20px;
+  line-height: 1.3;
+  vertical-align: middle;
 }
 
 .searchbar input {
@@ -288,6 +290,14 @@ h2 {
   box-shadow: var(--shadow-lg);
 }
 
+.projects .card p {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .card-actions {
   align-self: flex-end;
   display: flex;
@@ -317,6 +327,10 @@ h2 {
 
 .announcements p {
   font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .trending {
