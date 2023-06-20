@@ -2,7 +2,7 @@
 
 ## Project: Admin Dashboard
 
-## [Live](https://alexign473.github.io/admin-dashboard/)
+## [Live](https://isikava.github.io/admin-dashboard/)
 
 ![](Screenshot.jpg)
 
